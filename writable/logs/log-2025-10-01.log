@@ -1,0 +1,582 @@
+ERROR - 2025-10-01 07:36:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:36:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:37:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('citizen', 'public123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('citizen', 'public123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:37:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('citizen', 'public123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:39:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:39:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:41:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:41:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:42:17 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:42:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:45:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:45:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:47:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:47:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:48:09 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-10-01 07:48:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\PenggunaModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AuthController.php(38): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 07:54:08 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(18): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(44): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggunaModel.php(18): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\AuthController.php(44): App\Models\PenggunaModel->authenticate('admin', 'admin123')
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\AuthController->processLogin()
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2025-10-01 07:54:08 --> Database error in authenticate: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+ERROR - 2025-10-01 07:54:08 --> Login error: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+CRITICAL - 2025-10-01 07:59:12 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: GET, Route: login]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\AuthController.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+CRITICAL - 2025-10-01 07:59:12 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: GET, Route: login]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\AuthController.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+CRITICAL - 2025-10-01 08:01:36 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: GET, Route: login]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\AuthController.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 08:01:42 --> Database Error: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+CRITICAL - 2025-10-01 08:07:32 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: GET, Route: login]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\AuthController.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 08:07:36 --> Database Error: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+CRITICAL - 2025-10-01 08:09:12 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: GET, Route: login]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\AuthController.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+CRITICAL - 2025-10-01 08:09:12 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: GET, Route: login]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\AuthController.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\public\\index.php')
+ERROR - 2025-10-01 08:09:18 --> Database Error: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+ERROR - 2025-10-01 08:09:43 --> Database Error: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+ERROR - 2025-10-01 08:09:44 --> Database Error: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+ERROR - 2025-10-01 08:10:26 --> Failed to connect to database
+ERROR - 2025-10-01 08:10:26 --> Database Error: Unable to connect to the database
+ERROR - 2025-10-01 08:10:46 --> Failed to connect to database
+ERROR - 2025-10-01 08:10:46 --> Database error in authenticate: Unable to connect to the database
+ERROR - 2025-10-01 08:10:46 --> Login error: Unable to connect to the database

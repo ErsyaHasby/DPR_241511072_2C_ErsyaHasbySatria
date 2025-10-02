@@ -12,9 +12,6 @@
     <div class="mb-3">
         <label class="form-label">Nama Belakang</label>
         <input type="text" name="nama_belakang" class="form-control" value="<?= old('nama_belakang') ?>" required>
-        <?php if (session()->getFlashdata('errors.nama_belakang')): ?>
-            <div class="text-danger"><?= session()->getFlashdata('errors.nama_belakang') ?></div>
-        <?php endif; ?>
     </div>
     <div class="mb-3">
         <label class="form-label">Gelar Depan</label>
@@ -32,9 +29,6 @@
             <option value="Wakil Ketua" <?= old('jabatan') === 'Wakil Ketua' ? 'selected' : '' ?>>Wakil Ketua</option>
             <option value="Anggota" <?= old('jabatan') === 'Anggota' ? 'selected' : '' ?>>Anggota</option>
         </select>
-        <?php if (session()->getFlashdata('errors.jabatan')): ?>
-            <div class="text-danger"><?= session()->getFlashdata('errors.jabatan') ?></div>
-        <?php endif; ?>
     </div>
     <div class="mb-3">
         <label class="form-label">Status Pernikahan</label>
@@ -48,9 +42,6 @@
             <option value="Cerai Mati" <?= old('status_pernikahan') === 'Cerai Mati' ? 'selected' : '' ?>>Cerai Mati
             </option>
         </select>
-        <?php if (session()->getFlashdata('errors.status_pernikahan')): ?>
-            <div class="text-danger"><?= session()->getFlashdata('errors.status_pernikahan') ?></div>
-        <?php endif; ?>
     </div>
     <div class="mb-3">
         <label class="form-label">Jumlah Anak</label>

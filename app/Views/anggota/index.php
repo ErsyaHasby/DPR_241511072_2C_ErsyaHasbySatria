@@ -39,11 +39,9 @@
                 <td><?= esc($a['jumlah_anak']) ?></td>
                 <?php if (session()->get('role') === 'Admin'): ?>
                     <td>
-                        <!-- Aksi Ubah/Hapus diimplementasikan di commit berikutnya -->
-                        <a href="/anggota/edit/<?= $a['id_anggota'] ?>" class="btn btn-warning btn-sm disabled">Ubah</a>
+                        <a href="/anggota/edit/<?= $a['id_anggota'] ?>" class="btn btn-warning btn-sm">Ubah</a>
                         <form action="/anggota/delete/<?= $a['id_anggota'] ?>" method="post" style="display:inline;">
-                            <button type="submit" class="btn btn-danger btn-sm disabled"
-                                onclick="return confirmDelete()">Hapus</button>
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirmDelete()">Hapus</button>
                         </form>
                     </td>
                 <?php endif; ?>

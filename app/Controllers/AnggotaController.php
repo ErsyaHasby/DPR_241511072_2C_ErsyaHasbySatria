@@ -12,6 +12,14 @@ class AnggotaController extends Controller
         $this->model = new AnggotaModel();
     }
 
+    public function index()
+    {
+        $keyword = $this->request->getGet('keyword');
+        $data['anggota'] = $keyword ? $this->model->search($keyword)->findAll() : $this->model->findAll();
+        $data['title'] = 'Data Anggota DPR';
+        return view('anggota/index', $data);
+    }
+
     public function create()
     {
         $data['title'] = 'Tambah Anggota DPR';

@@ -33,7 +33,7 @@
     <div class="container mt-4">
         <h1>Selamat Datang, <?= session()->get('nama_lengkap') ?>!</h1>
         <p>Ini adalah halaman dashboard untuk Administrator.</p>
-        <a href="<?= site_url('admin/anggota/tambah') ?>" class="btn btn-primary">Tambah Data Anggota DPR</a>
+        <a href="<?= site_url('admin/anggota') ?>" class="btn btn-primary">Kelola Data Anggota DPR</a>
     </div>
 </body>
 

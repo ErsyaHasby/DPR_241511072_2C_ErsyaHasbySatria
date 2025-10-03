@@ -7,17 +7,22 @@ use App\Models\AnggotaModel;
 
 class AnggotaController extends BaseController
 {
-    /**
-     * Menampilkan form untuk menambah data anggota baru.
-     */
+
+    public function index()
+    {
+        $anggotaModel = new AnggotaModel();
+        $data = [
+            'title' => 'Daftar Anggota DPR',
+            'anggota' => $anggotaModel->findAll(), // Mengambil semua data anggota
+        ];
+
+        return view('admin/anggota/index_view', $data);
+    }
     public function create()
     {
         return view('admin/anggota/create_view');
     }
 
-    /**
-     * Menyimpan data anggota baru ke database.
-     */
     public function store()
     {
         $anggotaModel = new AnggotaModel();
@@ -51,6 +56,6 @@ class AnggotaController extends BaseController
         $anggotaModel->save($data);
 
         // Redirect ke halaman daftar anggota (untuk sekarang ke dashboard) dengan pesan sukses
-        return redirect()->to(site_url('admin/dashboard'))->with('success', 'Data anggota berhasil ditambahkan!');
+        return redirect()->to(site_url('admin/anggota'))->with('success', 'Data anggota berhasil ditambahkan!');
     }
 }

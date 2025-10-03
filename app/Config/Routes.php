@@ -1,20 +1,26 @@
 <?php
 
 use CodeIgniter\Router\RouteCollection;
-// ... (di bagian atas file)
-use App\Controllers\AuthController;
 
-// ... (di dalam $routes->get('/', 'Home::index');)
+/**
+ * @var RouteCollection $routes
+ */
+$routes->get('/', 'Home::index');
 
-// Rute untuk Autentikasi
-$routes->get('/login', [AuthController::class, 'showLoginForm'], ['as' => 'login']);
-$routes->post('/login', [AuthController::class, 'processLogin'], ['as' => 'processLogin']);
-$routes->get('/logout', [AuthController::class, 'logout'], ['as' => 'logout']);
+$routes->get('/login', 'AuthController::showLoginForm', ['as' => 'login']);
+$routes->post('/login', 'AuthController::processLogin', ['as' => 'processLogin']);
+$routes->get('/logout', 'AuthController::logout', ['as' => 'logout']);
 
-// Halaman placeholder setelah login
-$routes->get('/admin/dashboard', static function () {
-    return '<h1>Selamat Datang Admin: ' . session()->get('nama_lengkap') . '</h1><a href="/logout">Logout</a>';
+$routes->group('admin', ['filter' => 'auth'], static function ($routes) {
+    // Rute untuk Dashboard Admin
+    $routes->get('dashboard', 'Admin\DashboardController::index', ['as' => 'admin.dashboard']);
+
+    // Rute untuk Anggota
+    $routes->get('anggota/tambah', 'Admin\AnggotaController::create', ['as' => 'admin.anggota.create']);
+    $routes->post('anggota/simpan', 'Admin\AnggotaController::store', ['as' => 'admin.anggota.store']);
 });
-$routes->get('/public/dashboard', static function () {
-    return '<h1>Selamat Datang Publik: ' . session()->get('nama_lengkap') . '</h1><a href="/logout">Logout</a>';
+$routes->group('public', ['filter' => 'auth'], static function ($routes) {
+    $routes->get('dashboard', static function () {
+        return '<h1>Selamat Datang Publik: ' . session()->get('nama_lengkap') . '</h1><a href="/logout">Logout</a>';
+    }, ['as' => 'public.dashboard']);
 });

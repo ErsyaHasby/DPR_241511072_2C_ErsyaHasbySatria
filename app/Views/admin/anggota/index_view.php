@@ -46,7 +46,8 @@
                                 <td><?= esc($item['status_pernikahan']) ?></td>
                                 <td><?= esc($item['jumlah_anak']) ?></td>
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning">Edit</a>
+                                    <a href="<?= site_url('admin/anggota/edit/' . $item['id_anggota']) ?>"
+                                        class="btn btn-sm btn-warning">Edit</a>
                                     <a href="#" class="btn btn-sm btn-danger">Hapus</a>
                                 </td>
                             </tr>

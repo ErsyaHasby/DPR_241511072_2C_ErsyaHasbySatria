@@ -17,6 +17,8 @@ $routes->group('admin', ['filter' => 'auth'], static function ($routes) {
     $routes->get('anggota', 'Admin\AnggotaController::index', ['as' => 'admin.anggota.index']);
     $routes->get('anggota/tambah', 'Admin\AnggotaController::create', ['as' => 'admin.anggota.create']);
     $routes->post('anggota/simpan', 'Admin\AnggotaController::store', ['as' => 'admin.anggota.store']);
+    $routes->get('anggota/edit/(:num)', 'Admin\AnggotaController::edit/$1');
+    $routes->post('anggota/update/(:num)', 'Admin\AnggotaController::update/$1');
 });
 
 $routes->group('public', ['filter' => 'auth'], static function ($routes) {

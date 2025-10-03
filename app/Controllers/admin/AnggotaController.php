@@ -123,4 +123,19 @@ class AnggotaController extends BaseController
 
         return redirect()->to(site_url('admin/anggota'))->with('success', 'Data anggota berhasil diperbarui!');
     }
+    public function delete($id = null)
+    {
+        $anggotaModel = new AnggotaModel();
+
+        // Cari data terlebih dahulu
+        $data = $anggotaModel->find($id);
+        if ($data) {
+            // Jika data ditemukan, hapus data
+            $anggotaModel->delete($id);
+            return redirect()->to(site_url('admin/anggota'))->with('success', 'Data anggota berhasil dihapus!');
+        } else {
+            // Jika data tidak ditemukan
+            return redirect()->to(site_url('admin/anggota'))->with('error', 'Data anggota tidak ditemukan.');
+        }
+    }
 }

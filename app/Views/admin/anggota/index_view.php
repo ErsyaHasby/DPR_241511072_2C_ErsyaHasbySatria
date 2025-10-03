@@ -48,7 +48,12 @@
                                 <td>
                                     <a href="<?= site_url('admin/anggota/edit/' . $item['id_anggota']) ?>"
                                         class="btn btn-sm btn-warning">Edit</a>
-                                    <a href="#" class="btn btn-sm btn-danger">Hapus</a>
+                                    <form action="<?= site_url('admin/anggota/delete/' . $item['id_anggota']) ?>" method="post"
+                                        class="d-inline"
+                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                                        <?= csrf_field() ?>
+                                        <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                    </form>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

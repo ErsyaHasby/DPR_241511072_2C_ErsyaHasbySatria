@@ -17,4 +17,13 @@ class AnggotaModel extends Model
         'status_pernikahan',
         'jumlah_anak'
     ];
+    public function search($keyword)
+    {
+        return $this->table('anggota')
+            ->like('nama_depan', $keyword)
+            ->orLike('nama_belakang', $keyword)
+            ->orLike('jabatan', $keyword)
+            ->orWhere('id_anggota', $keyword)
+            ->findAll();
+    }
 }

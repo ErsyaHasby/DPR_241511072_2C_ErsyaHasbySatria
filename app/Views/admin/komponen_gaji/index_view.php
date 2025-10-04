@@ -11,6 +11,14 @@
                 <?= session()->getFlashdata('success') ?>
             </div>
         <?php endif; ?>
+        <form action="<?= site_url('admin/komponen-gaji') ?>" method="get" class="mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control" name="keyword" placeholder="Cari komponen gaji..."
+                    value="<?= esc($keyword ?? '') ?>">
+                <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i> Cari</button>
+            </div>
+        </form>
+
 
         <a href="<?= site_url('admin/komponen-gaji/tambah') ?>" class="btn btn-primary mb-3"><i class="fas fa-plus"></i>
             Tambah Komponen</a>

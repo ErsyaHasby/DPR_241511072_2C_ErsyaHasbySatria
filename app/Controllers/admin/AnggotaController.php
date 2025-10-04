@@ -13,10 +13,18 @@ class AnggotaController extends BaseController
     public function index()
     {
         $anggotaModel = new AnggotaModel();
+        $keyword = $this->request->getGet('keyword'); // Ambil keyword dari URL
+
         $data = [
             'title' => 'Daftar Anggota DPR',
-            'anggota' => $anggotaModel->findAll(),
+            'keyword' => $keyword, // Kirim keyword ke view
         ];
+
+        if ($keyword) {
+            $data['anggota'] = $anggotaModel->search($keyword);
+        } else {
+            $data['anggota'] = $anggotaModel->findAll();
+        }
 
         return view('admin/anggota/index_view', $data);
     }

@@ -12,10 +12,18 @@ class PenggajianController extends BaseController
     public function index()
     {
         $penggajianModel = new PenggajianModel();
+        $keyword = $this->request->getGet('keyword');
+
         $data = [
             'title' => 'Data Penggajian Anggota DPR',
-            'penggajian' => $penggajianModel->getPenggajian(),
+            'keyword' => $keyword,
         ];
+
+        if ($keyword) {
+            $data['penggajian'] = $penggajianModel->search($keyword);
+        } else {
+            $data['penggajian'] = $penggajianModel->getPenggajian();
+        }
 
         return view('admin/penggajian/index_view', $data);
     }

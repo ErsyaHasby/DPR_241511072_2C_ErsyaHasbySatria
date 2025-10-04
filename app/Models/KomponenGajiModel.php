@@ -15,4 +15,15 @@ class KomponenGajiModel extends Model
         'nominal',
         'satuan'
     ];
+    public function search($keyword)
+    {
+        return $this->table('komponen_gaji')
+            ->like('nama_komponen', $keyword)
+            ->orLike('kategori', $keyword)
+            ->orLike('jabatan', $keyword)
+            ->orLike('nominal', $keyword)
+            ->orLike('satuan', $keyword)
+            ->orWhere('id_komponen_gaji', $keyword)
+            ->findAll();
+    }
 }

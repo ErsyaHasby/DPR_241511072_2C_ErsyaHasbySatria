@@ -10,10 +10,18 @@ class KomponenGajiController extends BaseController
     public function index()
     {
         $komponenGajiModel = new KomponenGajiModel();
+        $keyword = $this->request->getGet('keyword');
+
         $data = [
             'title' => 'Daftar Komponen Gaji & Tunjangan',
-            'komponen_gaji' => $komponenGajiModel->findAll(),
+            'keyword' => $keyword,
         ];
+
+        if ($keyword) {
+            $data['komponen_gaji'] = $komponenGajiModel->search($keyword);
+        } else {
+            $data['komponen_gaji'] = $komponenGajiModel->findAll();
+        }
 
         return view('admin/komponen_gaji/index_view', $data);
     }

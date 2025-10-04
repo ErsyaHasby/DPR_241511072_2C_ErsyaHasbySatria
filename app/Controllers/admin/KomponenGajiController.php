@@ -7,17 +7,21 @@ use App\Models\KomponenGajiModel;
 
 class KomponenGajiController extends BaseController
 {
-    /**
-     * Menampilkan form untuk menambah data komponen gaji baru.
-     */
+    public function index()
+    {
+        $komponenGajiModel = new KomponenGajiModel();
+        $data = [
+            'title' => 'Daftar Komponen Gaji & Tunjangan',
+            'komponen_gaji' => $komponenGajiModel->findAll(),
+        ];
+
+        return view('admin/komponen_gaji/index_view', $data);
+    }
     public function create()
     {
         return view('admin/komponen_gaji/create_view');
     }
 
-    /**
-     * Menyimpan data komponen gaji baru ke database.
-     */
     public function store()
     {
         $komponenGajiModel = new KomponenGajiModel();
@@ -48,6 +52,6 @@ class KomponenGajiController extends BaseController
 
         // Redirect ke halaman daftar komponen (yang akan kita buat nanti)
         // Untuk sekarang, kita arahkan ke dashboard
-        return redirect()->to(site_url('admin/dashboard'))->with('success', 'Komponen gaji berhasil ditambahkan!');
+        return redirect()->to(site_url('admin/komponen-gaji'))->with('success', 'Komponen gaji berhasil ditambahkan!');
     }
 }

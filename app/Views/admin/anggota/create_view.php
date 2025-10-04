@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('admin/layout/template') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Tambah Data Anggota</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container mt-5">
-        <h2>Formulir Tambah Data Anggota DPR</h2>
-        <hr>
-
+<?= $this->section('content') ?>
+<div class="card">
+    <div class="card-header">
+        <h4>Formulir Tambah Data Anggota DPR</h4>
+    </div>
+    <div class="card-body">
         <?php $errors = session()->getFlashdata('errors'); ?>
         <?php if (!empty($errors)): ?>
             <div class="alert alert-danger" role="alert">
-                <h4 class="alert-heading">Terdapat Kesalahan!</h4>
+                <p class="mb-0"><strong>Terdapat Kesalahan!</strong></p>
                 <hr>
-                <p class="mb-0">
-                    <?php foreach ($errors as $error): ?>
-                        <?= esc($error) ?><br>
-                    <?php endforeach ?>
-                </p>
+                <?php foreach ($errors as $error): ?>        <?= esc($error) ?><br><?php endforeach ?>
             </div>
         <?php endif; ?>
 
@@ -85,10 +74,9 @@
                 <input type="number" class="form-control" name="jumlah_anak" id="jumlah_anak"
                     value="<?= old('jumlah_anak', 0) ?>" required min="0">
             </div>
-            <button type="submit" class="btn btn-primary">Simpan Data</button>
-            <a href="<?= site_url('admin/dashboard') ?>" class="btn btn-secondary">Batal</a>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan Data</button>
+            <a href="<?= site_url('admin/anggota') ?>" class="btn btn-secondary">Batal</a>
         </form>
     </div>
-</body>
-
-</html>
+</div>
+<?= $this->endSection() ?>

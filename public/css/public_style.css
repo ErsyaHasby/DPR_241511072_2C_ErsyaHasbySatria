@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #198754;
+    /* Hijau Bootstrap */
+    --secondary-color: #157347;
+    --light-bg: #f8f9fa;
+    --text-color: #212529;
+    --white-color: #ffffff;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    padding-top: 80px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.footer {
+    background-color: var(--white-color);
+    border-top: 1px solid var(--border-color);
+}
+
+main.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.table-dark {
+    --bs-table-bg: var(--secondary-color);
+    --bs-table-border-color: var(--primary-color);
+}

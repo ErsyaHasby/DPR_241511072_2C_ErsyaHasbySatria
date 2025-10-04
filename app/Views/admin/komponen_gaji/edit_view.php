@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('admin/layout/template') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title><?= esc($title) ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container mt-5">
-        <h2>Formulir Edit Komponen Gaji</h2>
-        <hr>
-
+<?= $this->section('content') ?>
+<div class="card">
+    <div class="card-header">
+        <h4><?= esc($title) ?></h4>
+    </div>
+    <div class="card-body">
         <?php $errors = session()->getFlashdata('errors'); ?>
         <?php if (!empty($errors)): ?>
             <div class="alert alert-danger" role="alert">
-                <h4 class="alert-heading">Terdapat Kesalahan!</h4>
+                <p class="mb-0"><strong>Terdapat Kesalahan!</strong></p>
                 <hr>
-                <p class="mb-0"><?php foreach ($errors as $error): ?><?= esc($error) ?><br><?php endforeach ?></p>
+                <?php foreach ($errors as $error): ?>        <?= esc($error) ?><br><?php endforeach ?>
             </div>
         <?php endif; ?>
 
@@ -29,13 +22,11 @@
                 <input type="text" class="form-control" name="nama_komponen" id="nama_komponen"
                     value="<?= esc($komponen['nama_komponen']) ?>" required>
             </div>
-
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="kategori" class="form-label">Kategori <span class="text-danger">*</span></label>
                         <select class="form-select" name="kategori" id="kategori" required>
-                            <option value="">Pilih Kategori</option>
                             <option value="Gaji Pokok" <?= $komponen['kategori'] == 'Gaji Pokok' ? 'selected' : '' ?>>Gaji
                                 Pokok</option>
                             <option value="Tunjangan Melekat" <?= $komponen['kategori'] == 'Tunjangan Melekat' ? 'selected' : '' ?>>Tunjangan Melekat</option>
@@ -46,7 +37,6 @@
                         <label for="jabatan" class="form-label">Berlaku untuk Jabatan <span
                                 class="text-danger">*</span></label>
                         <select class="form-select" name="jabatan" id="jabatan" required>
-                            <option value="">Pilih Jabatan</option>
                             <option value="Semua" <?= $komponen['jabatan'] == 'Semua' ? 'selected' : '' ?>>Semua</option>
                             <option value="Ketua" <?= $komponen['jabatan'] == 'Ketua' ? 'selected' : '' ?>>Ketua</option>
                             <option value="Wakil Ketua" <?= $komponen['jabatan'] == 'Wakil Ketua' ? 'selected' : '' ?>>
@@ -65,7 +55,6 @@
                     <div class="mb-3">
                         <label for="satuan" class="form-label">Satuan <span class="text-danger">*</span></label>
                         <select class="form-select" name="satuan" id="satuan" required>
-                            <option value="">Pilih Satuan</option>
                             <option value="Bulan" <?= $komponen['satuan'] == 'Bulan' ? 'selected' : '' ?>>Bulan</option>
                             <option value="Hari" <?= $komponen['satuan'] == 'Hari' ? 'selected' : '' ?>>Hari</option>
                             <option value="Periode" <?= $komponen['satuan'] == 'Periode' ? 'selected' : '' ?>>Periode
@@ -74,11 +63,9 @@
                     </div>
                 </div>
             </div>
-
-            <button type="submit" class="btn btn-warning">Update Komponen</button>
+            <button type="submit" class="btn btn-warning"><i class="fas fa-save"></i> Update Komponen</button>
             <a href="<?= site_url('admin/komponen-gaji') ?>" class="btn btn-secondary">Batal</a>
         </form>
     </div>
-</body>
-
-</html>
+</div>
+<?= $this->endSection() ?>

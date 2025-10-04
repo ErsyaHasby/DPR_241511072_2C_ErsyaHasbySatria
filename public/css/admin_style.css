@@ -1,0 +1,63 @@
+/* public/css/admin_style.css */
+
+:root {
+    --primary-color: #0d6efd; /* Biru Bootstrap */
+    --dark-color: #212529;    /* Abu-abu sangat gelap */
+    --secondary-dark: #343a40; /* Abu-abu gelap */
+    --light-bg: #f8f9fa;      /* Latar belakang terang */
+    --white-color: #ffffff;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    padding-top: 80px; /* Memberi ruang untuk navbar fixed-top */
+}
+
+.navbar {
+    background-color: var(--secondary-dark);
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.table-dark {
+    --bs-table-bg: var(--dark-color);
+    --bs-table-border-color: var(--secondary-dark);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.footer {
+    background-color: var(--white-color);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9em;
+}
+
+main.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

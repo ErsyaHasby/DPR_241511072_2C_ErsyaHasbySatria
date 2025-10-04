@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('admin/layout/template') ?>
 
-<head>
-    <meta charset="UTF-M">
-    <title><?= esc($title) ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container mt-5">
-        <h2>Formulir Edit Data Anggota DPR</h2>
-        <hr>
-
+<?= $this->section('content') ?>
+<div class="card">
+    <div class="card-header">
+        <h4><?= esc($title) ?></h4>
+    </div>
+    <div class="card-body">
         <?php $errors = session()->getFlashdata('errors'); ?>
         <?php if (!empty($errors)): ?>
             <div class="alert alert-danger" role="alert">
-                <h4 class="alert-heading">Terdapat Kesalahan!</h4>
+                <p class="mb-0"><strong>Terdapat Kesalahan!</strong></p>
                 <hr>
-                <p class="mb-0">
-                    <?php foreach ($errors as $error): ?>
-                        <?= esc($error) ?><br>
-                    <?php endforeach ?>
-                </p>
+                <?php foreach ($errors as $error): ?>        <?= esc($error) ?><br><?php endforeach ?>
             </div>
         <?php endif; ?>
 
@@ -43,7 +32,6 @@
                     <div class="mb-3">
                         <label for="jabatan" class="form-label">Jabatan <span class="text-danger">*</span></label>
                         <select class="form-select" name="jabatan" id="jabatan" required>
-                            <option value="">Pilih Jabatan</option>
                             <option value="Ketua" <?= $anggota['jabatan'] == 'Ketua' ? 'selected' : '' ?>>Ketua</option>
                             <option value="Wakil Ketua" <?= $anggota['jabatan'] == 'Wakil Ketua' ? 'selected' : '' ?>>Wakil
                                 Ketua</option>
@@ -68,7 +56,6 @@
                         <label for="status_pernikahan" class="form-label">Status Pernikahan <span
                                 class="text-danger">*</span></label>
                         <select class="form-select" name="status_pernikahan" id="status_pernikahan" required>
-                            <option value="">Pilih Status</option>
                             <option value="Kawin" <?= $anggota['status_pernikahan'] == 'Kawin' ? 'selected' : '' ?>>Kawin
                             </option>
                             <option value="Belum Kawin" <?= $anggota['status_pernikahan'] == 'Belum Kawin' ? 'selected' : '' ?>>Belum Kawin</option>
@@ -83,10 +70,9 @@
                 <input type="number" class="form-control" name="jumlah_anak" id="jumlah_anak"
                     value="<?= esc($anggota['jumlah_anak']) ?>" required min="0">
             </div>
-            <button type="submit" class="btn btn-warning">Update Data</button>
+            <button type="submit" class="btn btn-warning"><i class="fas fa-save"></i> Update Data</button>
             <a href="<?= site_url('admin/anggota') ?>" class="btn btn-secondary">Batal</a>
         </form>
     </div>
-</body>
-
-</html>
+</div>
+<?= $this->endSection() ?>

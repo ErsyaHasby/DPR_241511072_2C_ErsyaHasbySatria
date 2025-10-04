@@ -1,42 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('admin/layout/template') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Admin Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Admin Panel</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="<?= site_url('admin/dashboard') ?>">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Anggota DPR</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="btn btn-danger" href="<?= site_url('logout') ?>">Logout</a>
-                    </li>
-                </ul>
+<?= $this->section('content') ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card bg-light my-4">
+                <div class="card-body text-center">
+                    <h1 class="card-title">Selamat Datang, <?= session()->get('nama_lengkap') ?>!</h1>
+                    <p class="card-text">Anda login sebagai **Administrator**. Gunakan menu navigasi di atas untuk
+                        mengelola data sistem.</p>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <div class="container mt-4">
-        <h1>Selamat Datang, <?= session()->get('nama_lengkap') ?>!</h1>
-        <p>Ini adalah halaman dashboard untuk Administrator.</p>
-        <a href="<?= site_url('admin/anggota') ?>" class="btn btn-primary">Kelola Data Anggota DPR</a>
-        <a href="<?= site_url('admin/komponen-gaji') ?>" class="btn btn-success">Kelola Komponen Gaji</a>
-        <a href="<?= site_url('admin/penggajian') ?>" class="btn btn-info">Kelola Penggajian</a>
     </div>
-</body>
-
-</html>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                    <h5 class="card-title">Anggota DPR</h5>
+                    <p class="card-text">Kelola data master anggota dewan.</p>
+                    <a href="<?= site_url('admin/anggota') ?>" class="btn btn-primary">Kelola Anggota</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <i class="fas fa-list-alt fa-3x text-success mb-3"></i>
+                    <h5 class="card-title">Komponen Gaji</h5>
+                    <p class="card-text">Kelola semua jenis gaji dan tunjangan.</p>
+                    <a href="<?= site_url('admin/komponen-gaji') ?>" class="btn btn-success">Kelola Komponen</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <i class="fas fa-money-bill-wave fa-3x text-info mb-3"></i>
+                    <h5 class="card-title">Penggajian</h5>
+                    <p class="card-text">Kelola dan lihat rincian penggajian anggota.</p>
+                    <a href="<?= site_url('admin/penggajian') ?>" class="btn btn-info">Kelola Penggajian</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?= $this->endSection() ?>

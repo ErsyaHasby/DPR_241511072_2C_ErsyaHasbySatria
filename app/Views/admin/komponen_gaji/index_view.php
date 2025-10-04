@@ -1,25 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('admin/layout/template') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title><?= esc($title) ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container mt-5">
-        <h2><?= esc($title) ?></h2>
-        <hr>
-
+<?= $this->section('content') ?>
+<div class="card">
+    <div class="card-header">
+        <h4>Daftar Komponen Gaji & Tunjangan</h4>
+    </div>
+    <div class="card-body">
         <?php if (session()->getFlashdata('success')): ?>
             <div class="alert alert-success" role="alert">
                 <?= session()->getFlashdata('success') ?>
             </div>
         <?php endif; ?>
 
-        <a href="<?= site_url('admin/komponen-gaji/tambah') ?>" class="btn btn-primary mb-3">Tambah Komponen Baru</a>
+        <a href="<?= site_url('admin/komponen-gaji/tambah') ?>" class="btn btn-primary mb-3"><i class="fas fa-plus"></i>
+            Tambah Komponen</a>
 
         <div class="table-responsive">
             <table class="table table-bordered table-hover">
@@ -45,28 +39,22 @@
                                 <td><?= esc($item['jabatan']) ?></td>
                                 <td>Rp <?= number_format($item['nominal'], 0, ',', '.') ?></td>
                                 <td><?= esc($item['satuan']) ?></td>
-                                <td>
+                                <td class="text-center">
                                     <a href="<?= site_url('admin/komponen-gaji/edit/' . $item['id_komponen_gaji']) ?>"
-                                        class="btn btn-sm btn-warning">Edit</a>
+                                        class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
                                     <form action="<?= site_url('admin/komponen-gaji/delete/' . $item['id_komponen_gaji']) ?>"
-                                        method="post" class="d-inline"
-                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                                        method="post" class="d-inline" onsubmit="return confirm('Yakin ingin hapus?');">
                                         <?= csrf_field() ?>
-                                        <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                        <button type="submit" class="btn btn-sm btn-danger"><i
+                                                class="fas fa-trash-alt"></i></button>
                                     </form>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
-                    <?php else: ?>
-                        <tr>
-                            <td colspan="7" class="text-center">Tidak ada data komponen gaji.</td>
-                        </tr>
                     <?php endif; ?>
                 </tbody>
             </table>
         </div>
-        <a href="<?= site_url('admin/dashboard') ?>" class="btn btn-secondary">Kembali ke Dashboard</a>
     </div>
-</body>
-
-</html>
+</div>
+<?= $this->endSection() ?>

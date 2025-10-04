@@ -46,8 +46,14 @@
                                 <td>Rp <?= number_format($item['nominal'], 0, ',', '.') ?></td>
                                 <td><?= esc($item['satuan']) ?></td>
                                 <td>
-                                    <a href="<?= site_url('admin/komponen-gaji/edit/' . $item['id_komponen_gaji']) ?>" class="btn btn-sm btn-warning">Edit</a>
-                                    <a href="#" class="btn btn-sm btn-danger">Hapus</a>
+                                    <a href="<?= site_url('admin/komponen-gaji/edit/' . $item['id_komponen_gaji']) ?>"
+                                        class="btn btn-sm btn-warning">Edit</a>
+                                    <form action="<?= site_url('admin/komponen-gaji/delete/' . $item['id_komponen_gaji']) ?>"
+                                        method="post" class="d-inline"
+                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                                        <?= csrf_field() ?>
+                                        <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                    </form>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

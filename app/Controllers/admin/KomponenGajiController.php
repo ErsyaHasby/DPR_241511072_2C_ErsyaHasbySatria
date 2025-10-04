@@ -102,4 +102,16 @@ class KomponenGajiController extends BaseController
 
         return redirect()->to(site_url('admin/komponen-gaji'))->with('success', 'Komponen gaji berhasil diperbarui!');
     }
+    public function delete($id = null)
+    {
+        $komponenGajiModel = new KomponenGajiModel();
+
+        $data = $komponenGajiModel->find($id);
+        if ($data) {
+            $komponenGajiModel->delete($id);
+            return redirect()->to(site_url('admin/komponen-gaji'))->with('success', 'Komponen gaji berhasil dihapus!');
+        } else {
+            return redirect()->to(site_url('admin/komponen-gaji'))->with('error', 'Komponen gaji tidak ditemukan.');
+        }
+    }
 }

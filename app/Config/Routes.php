@@ -25,6 +25,7 @@ $routes->group('admin', ['filter' => 'auth'], static function ($routes) {
     $routes->post('komponen-gaji/simpan', 'Admin\KomponenGajiController::store');
     $routes->get('komponen-gaji/edit/(:num)', 'Admin\KomponenGajiController::edit/$1');
     $routes->post('komponen-gaji/update/(:num)', 'Admin\KomponenGajiController::update/$1');
+    $routes->post('komponen-gaji/delete/(:num)', 'Admin\KomponenGajiController::delete/$1');
 });
 
 $routes->group('public', ['filter' => 'auth'], static function ($routes) {

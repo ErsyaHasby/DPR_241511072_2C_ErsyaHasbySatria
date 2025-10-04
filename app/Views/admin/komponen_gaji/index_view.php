@@ -46,7 +46,7 @@
                                 <td>Rp <?= number_format($item['nominal'], 0, ',', '.') ?></td>
                                 <td><?= esc($item['satuan']) ?></td>
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-warning">Edit</a>
+                                    <a href="<?= site_url('admin/komponen-gaji/edit/' . $item['id_komponen_gaji']) ?>" class="btn btn-sm btn-warning">Edit</a>
                                     <a href="#" class="btn btn-sm btn-danger">Hapus</a>
                                 </td>
                             </tr>

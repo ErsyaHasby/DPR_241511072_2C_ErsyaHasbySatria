@@ -54,4 +54,52 @@ class KomponenGajiController extends BaseController
         // Untuk sekarang, kita arahkan ke dashboard
         return redirect()->to(site_url('admin/komponen-gaji'))->with('success', 'Komponen gaji berhasil ditambahkan!');
     }
+    public function edit($id = null)
+    {
+        $komponenGajiModel = new KomponenGajiModel();
+        $data = [
+            'title' => 'Edit Komponen Gaji',
+            'komponen' => $komponenGajiModel->find($id)
+        ];
+
+        if (empty($data['komponen'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Komponen gaji tidak ditemukan.');
+        }
+
+        return view('admin/komponen_gaji/edit_view', $data);
+    }
+
+    /**
+     * Memperbarui data komponen gaji di database.
+     */
+    public function update($id = null)
+    {
+        $komponenGajiModel = new KomponenGajiModel();
+
+        // Aturan validasi
+        $rules = [
+            'nama_komponen' => 'required|min_length[3]',
+            'kategori' => 'required|in_list[Gaji Pokok,Tunjangan Melekat,Tunjangan Lain]',
+            'jabatan' => 'required|in_list[Ketua,Wakil Ketua,Anggota,Semua]',
+            'nominal' => 'required|numeric',
+            'satuan' => 'required|in_list[Bulan,Hari,Periode]'
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        // Jika validasi berhasil, update data
+        $data = [
+            'nama_komponen' => $this->request->getPost('nama_komponen'),
+            'kategori' => $this->request->getPost('kategori'),
+            'jabatan' => $this->request->getPost('jabatan'),
+            'nominal' => $this->request->getPost('nominal'),
+            'satuan' => $this->request->getPost('satuan'),
+        ];
+
+        $komponenGajiModel->update($id, $data);
+
+        return redirect()->to(site_url('admin/komponen-gaji'))->with('success', 'Komponen gaji berhasil diperbarui!');
+    }
 }

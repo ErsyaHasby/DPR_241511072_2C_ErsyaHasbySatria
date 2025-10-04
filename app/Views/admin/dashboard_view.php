@@ -35,8 +35,7 @@
         <p>Ini adalah halaman dashboard untuk Administrator.</p>
         <a href="<?= site_url('admin/anggota') ?>" class="btn btn-primary">Kelola Data Anggota DPR</a>
         <a href="<?= site_url('admin/komponen-gaji') ?>" class="btn btn-success">Kelola Komponen Gaji</a>
-        <hr>
-        <a href="<?= site_url('admin/penggajian/tambah') ?>" class="btn btn-info">Tambah Data Penggajian</a>
+        <a href="<?= site_url('admin/penggajian') ?>" class="btn btn-info">Kelola Penggajian</a>
     </div>
 </body>
 

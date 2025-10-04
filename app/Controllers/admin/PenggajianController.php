@@ -9,9 +9,16 @@ use App\Models\PenggajianModel;
 
 class PenggajianController extends BaseController
 {
-    /**
-     * Menampilkan form untuk menambah data penggajian.
-     */
+    public function index()
+    {
+        $penggajianModel = new PenggajianModel();
+        $data = [
+            'title' => 'Data Penggajian Anggota DPR',
+            'penggajian' => $penggajianModel->getPenggajian(),
+        ];
+
+        return view('admin/penggajian/index_view', $data);
+    }
     public function create()
     {
         $anggotaModel = new AnggotaModel();
@@ -64,6 +71,6 @@ class PenggajianController extends BaseController
         }
 
         // Redirect ke halaman daftar penggajian (yang akan kita buat nanti)
-        return redirect()->to('admin/dashboard')->with('success', $message);
+        return redirect()->to('admin/penggajian')->with('success', $message);
     }
 }

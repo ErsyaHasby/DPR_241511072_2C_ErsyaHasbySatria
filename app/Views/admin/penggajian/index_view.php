@@ -44,8 +44,13 @@
                                 <td><?= esc($item['jabatan']) ?></td>
                                 <td><b>Rp <?= number_format($item['take_home_pay'] ?? 0, 0, ',', '.') ?></b></td>
                                 <td>
-                                    <a href="#" class="btn btn-sm btn-info">Detail</a>
+                                <td>
+                                    <a href="<?= site_url('admin/penggajian/detail/' . $item['id_anggota']) ?>"
+                                        class="btn btn-sm btn-info">Detail</a>
+                                    <a href="<?= site_url('admin/penggajian/edit/' . $item['id_anggota']) ?>"
+                                        class="btn btn-sm btn-warning">Edit</a>
                                     <a href="#" class="btn btn-sm btn-danger">Hapus</a>
+                                </td>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

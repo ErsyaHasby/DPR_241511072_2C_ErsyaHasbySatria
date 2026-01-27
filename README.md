@@ -1,53 +1,175 @@
-# CodeIgniter 4 Framework
+# Sistem Informasi Penggajian Anggota DPR RI
 
-## What is CodeIgniter?
+## 📋 Informasi Mahasiswa
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+| Attribute | Keterangan |
+|-----------|-----------|
+| **Nama** | Ersya Hasby Satria |
+| **NIM** | 241511072 |
+| **Kelas** | 2C |
+| **Mata Kuliah** | Desain dan Pemrograman Web |
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 📝 Deskripsi Proyek
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+Sistem Informasi Penggajian Anggota DPR RI adalah aplikasi web berbasis CodeIgniter 4 yang dirancang untuk mengelola data anggota Dewan Perwakilan Rakyat (DPR) RI beserta sistem penggajiannya. Aplikasi ini memiliki fitur lengkap untuk mengelola data anggota, komponen gaji, dan proses penggajian dengan antarmuka yang user-friendly.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## ✨ Fitur Utama
 
-## Important Change with index.php
+### 🔐 Sistem Autentikasi
+- Login untuk admin
+- Logout
+- Session management
+- Protected routes dengan filter
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+### 👥 Manajemen Anggota DPR
+- Tambah data anggota (nama depan, nama belakang, gelar, jabatan, status pernikahan, jumlah anak)
+- Edit data anggota
+- Hapus data anggota
+- Pencarian anggota berdasarkan nama dan jabatan
+- View daftar anggota untuk publik dan admin
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+### 💰 Manajemen Komponen Gaji
+- Tambah komponen gaji baru
+- Edit komponen gaji
+- Hapus komponen gaji
+- Daftar semua komponen gaji
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### 💵 Manajemen Penggajian
+- Input data penggajian anggota
+- Edit data penggajian
+- Hapus data penggajian
+- Lihat detail penggajian lengkap
+- View penggajian untuk publik
 
-## Repository Management
+### 📊 Dashboard
+- Dashboard admin dengan informasi ringkasan
+- Dashboard publik untuk melihat data
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## 🛠️ Teknologi yang Digunakan
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- **Framework**: CodeIgniter 4
+- **Database**: MySQL
+- **Frontend**: HTML, CSS, Bootstrap
+- **Backend**: PHP 8.1+
+- **Server**: XAMPP (Apache + MySQL)
 
-## Contributing
+## 📂 Struktur Database
 
-We welcome contributions from the community.
+### Tabel `anggota`
+- `id_anggota` (Primary Key)
+- `nama_depan`
+- `nama_belakang`
+- `gelar_depan`
+- `gelar_belakang`
+- `jabatan`
+- `status_pernikahan`
+- `jumlah_anak`
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+### Tabel `komponen_gaji`
+- Data komponen gaji (gaji pokok, tunjangan, dll)
 
-## Server Requirements
+### Tabel `penggajian`
+- Data penggajian anggota
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+### Tabel `users`
+- Data pengguna untuk autentikasi
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+## 🚀 Cara Instalasi
 
-> [!WARNING]
+### Prasyarat
+- PHP >= 8.1
+- MySQL/MariaDB
+- XAMPP atau web server lainnya
+- Composer (optional)
+
+### Langkah Instalasi
+
+1. **Clone atau Download Repository**
+   ```bash
+   git clone <repository-url>
+   cd DPR_241511072_2C_ErsyaHasbySatria
+   ```
+
+2. **Konfigurasi Database**
+   - Buat database baru di phpMyAdmin
+   ```sql
+   CREATE DATABASE db_dpr;
+   ```
+   
+3. **Setting Database di CodeIgniter**
+   - Buka file `app/Config/Database.php`
+   - Sesuaikan konfigurasi database:
+   ```php
+   public array $default = [
+       'hostname' => 'localhost',
+       'username' => 'root',
+       'password' => '',
+       'database' => 'db_dpr',
+       'DBDriver' => 'MySQLi',
+   ];
+   ```
+
+4. **Import Database**
+   - Import file SQL yang tersedia (jika ada) atau buat tabel sesuai struktur di atas
+
+5. **Jalankan Aplikasi**
+   - Pastikan XAMPP sudah running (Apache & MySQL)
+   - Akses melalui browser:
+   ```
+   http://localhost/DPR_241511072_2C_ErsyaHasbySatria/public/
+   ```
+
+## 🔗 Routing & URL
+
+### Public Routes
+- `/` - Halaman utama
+- `/login` - Halaman login
+- `/anggota-publik` - Daftar anggota (akses publik)
+- `/penggajian-publik` - Data penggajian (akses publik)
+
+### Admin Routes (Perlu Login)
+- `/admin/dashboard` - Dashboard admin
+- `/admin/anggota` - Manajemen anggota
+- `/admin/komponen-gaji` - Manajemen komponen gaji
+- `/admin/penggajian` - Manajemen penggajian
+
+## 👤 Default Login
+
+```
+Username: admin
+Password: admin123
+```
+*(Sesuaikan dengan data yang ada di tabel users)*
+
+## 📸 Screenshot
+
+*(Tambahkan screenshot aplikasi di sini jika diperlukan)*
+
+## 🎯 Fitur Keamanan
+
+- Filter autentikasi untuk halaman admin
+- Session management
+- CSRF Protection (bawaan CodeIgniter 4)
+- Validasi input data
+- Password hashing
+
+## 📱 Responsive Design
+
+Aplikasi ini menggunakan Bootstrap untuk memastikan tampilan responsif di berbagai ukuran layar (desktop, tablet, mobile).
+
+## 📄 Lisensi
+
+Proyek ini dibuat untuk keperluan akademik.
+
+## 👨‍💻 Pengembang
+
+**Ersya Hasby Satria**  
+NIM: 241511072  
+Kelas: 2C
+
+---
+
+© 2026 - Sistem Informasi Penggajian Anggota DPR RI
 > - The end of life date for PHP 7.4 was November 28, 2022.
 > - The end of life date for PHP 8.0 was November 26, 2023.
 > - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.

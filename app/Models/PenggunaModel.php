@@ -6,9 +6,9 @@ use CodeIgniter\Model;
 
 class PenggunaModel extends Model
 {
-    protected $table = 'pengguna';
-    protected $primaryKey = 'id_pengguna';
-    protected $allowedFields = ['username', 'password', 'email', 'nama_depan', 'nama_belakang', 'role'];
+    protected $table = 'users';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['username', 'password', 'nama_depan', 'nama_belakang', 'role'];
 
     public function getUserByUsername($username)
     {

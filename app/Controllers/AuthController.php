@@ -19,7 +19,7 @@ class AuthController extends BaseController
     {
         // Jika sudah login, redirect ke halaman yang sesuai
         if ($this->session->get('isLoggedIn')) {
-            return redirect()->to($this->session->get('role') === 'Admin' ? '/admin/dashboard' : '/public/dashboard');
+            return redirect()->to($this->session->get('role') === 'admin' ? '/admin/dashboard' : '/public/dashboard');
         }
         return view('auth/login');
     }
@@ -45,16 +45,16 @@ class AuthController extends BaseController
         if ($user && password_verify($password, $user['password'])) {
             // Set session
             $sessionData = [
-                'id_pengguna' => $user['id_pengguna'],
+                'id' => $user['id'],
                 'username' => $user['username'],
-                'nama_lengkap' => $user['nama_depan'] . ' ' . $user['nama_belakang'],
+                'nama_lengkap' => $user['nama_depan'] . ' ' . ($user['nama_belakang'] ?? ''),
                 'role' => $user['role'],
                 'isLoggedIn' => TRUE
             ];
             $this->session->set($sessionData);
 
             // Redirect berdasarkan role
-            if ($user['role'] === 'Admin') {
+            if ($user['role'] === 'admin') {
                 return redirect()->to('/admin/dashboard');
             } else {
                 return redirect()->to('/public/dashboard');

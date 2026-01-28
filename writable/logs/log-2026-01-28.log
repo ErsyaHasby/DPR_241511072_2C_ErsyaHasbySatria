@@ -1,0 +1,233 @@
+DEBUG - 2026-01-28 03:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 03:45:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 04:09:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 04:09:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 04:09:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 04:10:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 04:10:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 04:12:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-01-28 04:12:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$session is deprecated in APPPATH\Controllers\AuthController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-28 04:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-28 04:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-28 04:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-28 04:17:52 --> ErrorException: Undefined array key "kategori"
+[Method: GET, Route: admin/komponen-gaji]
+in APPPATH\Views\admin\komponen_gaji\index_view.php on line 46.
+ 1 APPPATH\Views\admin\komponen_gaji\index_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kategori"', 'C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\app\\Views\\admin\\komponen_gaji\\index_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Github\\DPR_241511072_2C_ErsyaHasbySatria\\app\\Views\\admin\\komponen_gaji\\index_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('admin/komponen_gaji/index_view', [], true)
+ 5 APPPATH\Controllers\admin\KomponenGajiController.php(26): view('admin/komponen_gaji/index_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\KomponenGajiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KomponenGajiController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-01-28 04:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-28 04:17:57 --> mysqli_sql_exception: Unknown column 'k.satuan' in 'where clause' in C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `a`.`id_...', 0)
+#1 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`id_...')
+#2 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`id_...')
+#3 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_...', Array, false)
+#4 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Models\PenggajianModel.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\app\Controllers\admin\PenggajianController.php(25): App\Models\PenggajianModel->getPenggajian()
+#6 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(933): App\Controllers\Admin\PenggajianController->index()
+#7 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenggajianController))
+#8 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Github\DPR_241511072_2C_ErsyaHasbySatria\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2026-01-28 04:17:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'k.satuan' in 'where clause'
+[Method: GET, Route: admin/penggajian]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`', [], false)
+ 2 APPPATH\Models\PenggajianModel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\admin\PenggajianController.php(25): App\Models\PenggajianModel->getPenggajian()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\PenggajianController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenggajianController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-28 04:17:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'k.satuan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`', [], false)
+ 4 APPPATH\Models\PenggajianModel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\admin\PenggajianController.php(25): App\Models\PenggajianModel->getPenggajian()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\PenggajianController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenggajianController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-28 04:17:57 --> [Caused by] mysqli_sql_exception: Unknown column 'k.satuan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`id_anggota`, `a`.`gelar_depan`, `a`.`nama_depan`, `a`.`nama_belakang`, `a`.`gelar_belakang`, `a`.`jabatan`, `a`.`status_pernikahan`, `a`.`jumlah_anak`, (SELECT SUM(
+                    CASE
+                        WHEN k.nama_komponen = \'Tunjangan Istri/Suami\' AND a.status_pernikahan != \'Kawin\' THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak = 0 THEN 0
+                        WHEN k.nama_komponen = \'Tunjangan Anak\' AND a.jumlah_anak > 0 THEN k.nominal * LEAST(a.jumlah_anak, 2)
+                        ELSE k.nominal
+                    END
+                )
+FROM `penggajian` `p`
+JOIN `komponen_gaji` `k` ON `p`.`id_komponen_gaji` = `k`.`id_komponen_gaji`
+WHERE `p`.`id_anggota` = `a`.`id_anggota`
+AND `k`.`satuan` = \'Bulan\') as take_home_pay
+FROM `anggota` `a`', [], false)
+ 5 APPPATH\Models\PenggajianModel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\admin\PenggajianController.php(25): App\Models\PenggajianModel->getPenggajian()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\PenggajianController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenggajianController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
